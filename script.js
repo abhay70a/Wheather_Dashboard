@@ -1,4 +1,4 @@
-const apiKey = "615342bdbeb7a20f014fb87f4be6b4bf"; 
+const apiKey = api; 
 
 async function getWeather() {
   const city = document.getElementById("city").value;
@@ -48,3 +48,4 @@ async function getForecast(city) {
   }
   document.getElementById("forecast-cards").innerHTML = forecastHTML;
 }
+
