@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #87ceeb, #f0f2f5);
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  font-size: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.search-box {
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+
+.weather-card {
+  background: rgba(255,255,255,0.8);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.temp-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.temp-section img {
+  width: 60px;
+}
+
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.forecast-card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 120px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.forecast-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  image-rendering: -webkit-optimize-contrast; 
+}
+
+.forecast-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
